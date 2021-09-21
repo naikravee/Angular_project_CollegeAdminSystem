@@ -1,0 +1,69 @@
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.example-container {
+    width: 60%;
+    margin: 4rem auto 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff2e6;
+}
+
+.example-form {
+    min-width: 120px;
+    max-width: 350px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.mat-form-field {
+    margin-top: 0.7rem;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #cc6600 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #cc6600 !important;;
+}
+
+.mat-input-element {
+    padding: 0 0.5rem;
+}
+
+.text-muted {
+    margin-top: 0.5rem;
+    color: #808080;
+}
+
+.mat-raised-button {
+    margin-top: 1rem;
+    background-color: #cc6600;
+    color: #fff;
+    width: 100%;
+}
+
+.mat-button {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #cc6600;
+    background-color: #fff;
+}
+
+.sign-in-logo {
+    width: 20px;
+    margin: 0 5px;
+}

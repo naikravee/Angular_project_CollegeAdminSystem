@@ -1,0 +1,93 @@
+
+[
+    {
+        "deptId": 1101,
+        "deptName": "I.T.",
+        "deptTeacherDetails": {
+            "teacherName": "Ms. Clementina DuBuque",
+            "qualification": "M.Sc. (I.T.)",
+            "designation": "Asst. Professor",
+            "yearsOfExp": 5 
+        }
+    },
+    {
+        "deptId": 1102,
+        "deptName": "Biochemistry",
+        "deptTeacherDetails": {
+            "teacherName": "Ms. Glenna Reichert",
+            "qualification": "M.Sc. (Biochemistry)",
+            "designation": "Co-Ordinator, Asst. Professor",
+            "yearsOfExp": 2
+        }
+    },
+    {
+        "deptId": 1103,
+        "deptName": "Computer Science",
+        "deptTeacherDetails": {
+            "teacherName": "Mr. Nicholas Runolfsdottir",
+            "qualification": "M.Sc. (Computer Application)",
+            "designation": "Asst. Professor",
+            "yearsOfExp": 6
+        }
+    },
+    {
+        "deptId": 1104,
+        "deptName": "Commerce",
+        "deptTeacherDetails": {
+            "teacherName": "Mrs. Dennis Schulist",
+            "qualification": "M.Com, M.B.A. (Finance)",
+            "designation": "Professor",
+            "yearsOfExp": 7
+        }
+    },
+    {
+        "deptId": 1105,
+        "deptName": "Economics",
+        "deptTeacherDetails": {
+            "teacherName": "Mr. Gunther Shcewitz",
+            "qualification": "M.A, B.Ed, M.(Phil)",
+            "designation": "H.O.D.",
+            "yearsOfExp": 4
+        }
+    },
+    {
+        "deptId": 1106,
+        "deptName": "Commerce",
+        "deptTeacherDetails": {
+            "teacherName": "Mr. Ervin Howell",
+            "qualification": "B.M.S, P.G.",
+            "designation": "Asst. Professor",
+            "yearsOfExp": 6
+        }
+    },
+    {
+        "deptId": 1107,
+        "deptName": "Arts",
+        "deptTeacherDetails": {
+            "teacherName": "Mrs. Kurtis Weissnat",
+            "qualification": "M.A, B.Ed, M.(Phil)",
+            "designation": "Professor",
+            "yearsOfExp": 3
+        }
+    },
+    {
+        "deptId": 1108,
+        "deptName": "Political Science",
+        "deptTeacherDetails": {
+            "teacherName": "Mr. Mark Schwimmer",
+            "qualification": "M.A., B.Ed., NET, PhD (Appeared)",
+            "designation": "Professor",
+            "yearsOfExp": 8
+        }
+    },
+    {
+        "deptId": 1109,
+        "deptName": "History",
+        "deptTeacherDetails": {
+            "teacherName": "Mr. Albert Wil",
+            "qualification": "M.A, M.Phil (Pursuing)",
+            "designation": "Professor",
+            "yearsOfExp": 5
+        }
+    }
+]

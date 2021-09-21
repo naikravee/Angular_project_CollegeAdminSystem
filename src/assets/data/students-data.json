@@ -1,0 +1,182 @@
+[
+    {
+        "studentRegNo": 1234,
+        "studentRollNo": 1,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "JOhn Doe",
+        "studentAddress": {
+            "apt": "Apt. 556",
+            "landmark": "Kulas Light",
+            "city": "Gwenborough"
+        }
+    },
+    {
+        "studentRegNo": 1235,
+        "studentRollNo": 2,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "Leanne Graham",
+        "studentAddress": {
+            "apt": "Suite 879",
+            "landmark": "Victor Plains",
+            "city": "Wisokyburgh"
+        }
+    },
+    {        
+        "studentRegNo": 1236,
+        "studentRollNo": 3,
+        "studentClass": 1,
+        "studentDiv": "B",
+        "studentName": "Clementine Bauch",
+        "studentAddress": {
+            "apt": "Apt. 847",
+            "landmark": "Douglas Extension",
+            "city": "McKenziehaven"
+        } 
+    },
+    {
+        "studentRegNo": 1237,
+        "studentRollNo": 4,
+        "studentClass": 2,
+        "studentDiv": "A",
+        "studentName": "Patricia Lebsack",
+        "studentAddress": {
+            "apt": "Suite 692",
+            "landmark": "Hoeger Mall",
+            "city": "South Elvis"
+        }
+    },
+    {
+        "studentRegNo": 1239,
+        "studentRollNo": 5,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "Chelsey Dietrich",
+        "studentAddress": {
+            "apt": "Suite 379",
+            "landmark": "Skiles Walks",
+            "city": "Roscoeview"
+        }
+    },
+    {
+        "studentRegNo": 1240,
+        "studentRollNo": 6,
+        "studentClass": 2,
+        "studentDiv": "B",
+        "studentName": "JOhn Doe",
+        "studentAddress": {
+            "apt": "Apt. 556",
+            "landmark": "Kulas Light",
+            "city": "Gwenborough"
+        }
+    },
+    {
+        "studentRegNo": 1241,
+        "studentRollNo": 7,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "Leanne Graham",
+        "studentAddress": {
+            "apt": "Suite 879",
+            "landmark": "Victor Plains",
+            "city": "Wisokyburgh"
+        }
+    },
+    {
+        "studentRegNo": 1242,
+        "studentRollNo": 3,
+        "studentClass": 2,
+        "studentDiv": "A",
+        "studentName": "Clementine Bauch",
+        "studentAddress": {
+            "apt": "Apt. 847",
+            "landmark": "Douglas Extension",
+            "city": "McKenziehaven"
+        } 
+    },
+    {
+        "studentRegNo": 1243,
+        "studentRollNo": 4,
+        "studentClass": 1,
+        "studentDiv": "B",
+        "studentName": "Patricia Lebsack",
+        "studentAddress": {
+            "apt": "Suite 692",
+            "landmark": "Hoeger Mall",
+            "city": "South Elvis"
+        }
+    },
+    {
+        "studentRegNo": 1244,
+        "studentRollNo": 1,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "Chelsey Dietrich",
+        "studentAddress": {
+            "apt": "Suite 379",
+            "landmark": "Skiles Walks",
+            "city": "Roscoeview"
+        }
+    },
+    {
+        "studentRegNo": 1245,
+        "studentRollNo": 5,
+        "studentClass": 1,
+        "studentDiv": "A",
+        "studentName": "JOhn Doe",
+        "studentAddress": {
+            "apt": "Apt. 556",
+            "landmark": "Kulas Light",
+            "city": "Gwenborough"
+        }
+    },
+    {
+        "studentRegNo": 1246,
+        "studentRollNo": 8,
+        "studentClass": 1,
+        "studentDiv": "B",
+        "studentName": "Leanne Graham",
+        "studentAddress": {
+            "apt": "Suite 879",
+            "landmark": "Victor Plains",
+            "city": "Wisokyburgh"
+        }
+    },
+    {
+        "studentRegNo": 1247,
+        "studentRollNo": 3,
+        "studentClass": 2,
+        "studentDiv": "B",
+        "studentName": "Clementine Bauch",
+        "studentAddress": {
+            "apt": "Apt. 847",
+            "landmark": "Douglas Extension",
+            "city": "McKenziehaven"
+        } 
+    },
+    {
+        "studentRegNo": 1248,
+        "studentRollNo": 2,
+        "studentClass": 2,
+        "studentDiv": "B",
+        "studentName": "Patricia Lebsack",
+        "studentAddress": {
+            "apt": "Suite 692",
+            "landmark": "Hoeger Mall",
+            "city": "South Elvis"
+        }
+    },
+    {
+        "studentRegNo": 1249,
+        "studentRollNo": 5,
+        "studentClass": 2,
+        "studentDiv": "A",
+        "studentName": "Chelsey Dietrich",
+        "studentAddress": {
+            "apt": "Suite 379",
+            "landmark": "Skiles Walks",
+            "city": "Roscoeview"
+        }
+    }
+]

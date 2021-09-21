@@ -1,0 +1,80 @@
+<div class="example-container">
+  <form class="example-form" [formGroup]="loginForm">
+
+    <!-- {{loginForm.value | json}} -->
+
+    <h2>Admin Login</h2>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter your Username:</mat-label>
+      <input type="text" autocomplete="off" matInput formControlName="username">
+      <mat-error *ngIf="username.hasError('required')">
+        Username is required.
+      </mat-error>
+      <mat-error *ngIf="username.hasError('minlength')">
+        Username must be 5 characters in length.
+      </mat-error>
+      <!-- <mat-error *ngIf="username.invalid">{{getUsernameErrorMessage()}}</mat-error> -->
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter your Password:</mat-label>
+      <input type="password" autocomplete="off" matInput formControlName="password">
+      <mat-error *ngIf="password.hasError('required')">
+        Password is required.
+      </mat-error>
+      <mat-error *ngIf="password.hasError('pattern')">
+        Enter a valid password.
+      </mat-error>
+      <!-- <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error> -->
+    </mat-form-field>
+
+    <small class="text-muted">Password must be atleast 8 characters in length and must contain atleast one uppercase character, one lowercase character, a number and a special character.</small>
+
+    <br>
+
+    <button mat-raised-button>Login</button>
+
+    <button mat-button (click)="signInWithGoogle()">
+      <img src="../../assets/images/sign-in-logo.png" class="sign-in-logo">
+      <span>Sign in with Google</span>
+    </button>
+    
+
+  </form>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="jumbotron bg-transparent text-center">
+    <div *ngIf="!user" class="card text-center">
+      <h6 class="card-header">
+        Social Login Demo
+      </h6>
+      <div class="card-block">
+        <h4 class="card-title">Not signed in</h4>
+        <p class="card-text">Sign in with</p>
+      </div>
+      <div class="card-block">
+        <button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()"><span class="fab fa-google text-primary"></span></button>
+      </div>
+    </div>
+    <div *ngIf="user" class="card text-center">
+      <h6 class="card-header">
+        Social Login Demo
+      </h6>
+      <div class="card-block"></div>
+      <img class="card-img-top img-fluid photo" src="{{ user.photoUrl }}">
+      <div class="card-block">
+        <h4 class="card-title">{{ user.name }}</h4>
+        <p class="card-text">{{ user.email }}</p>
+      </div>
+      <div class="card-block">
+        <button class="btn btn-danger my-4" (click)="signOut()">Sign out</button>
+      </div>
+    </div>
+  </div> -->

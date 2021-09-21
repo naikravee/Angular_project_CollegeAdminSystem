@@ -1,0 +1,120 @@
+<div class="container">
+    <mat-dialog-content>
+        <form class="example-form" [formGroup]="editStudentForm">
+
+            <!-- {{ editStudentForm.value | json }} -->
+
+            <h2>Edit Student details</h2>
+    
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <!-- Gen Reg No field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label>Gen Reg No</mat-label>
+                            <input type="text" matInput formControlName="studentRegNo" name="grno" #grno>
+                            <mat-error *ngIf="editStudentFormControl.studentRegNo?.touched && editStudentFormControl.studentRegNo.errors?.required">
+                                Gen. Reg. No. is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Roll No field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Roll No. </mat-label>
+                            <input type="number" matInput formControlName="studentRollNo" name="rollno">
+                            <mat-error *ngIf="editStudentFormControl.studentRollNo?.touched && editStudentFormControl.studentRollNo.errors?.required">
+                                Roll No. is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <!-- Class field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Class </mat-label>
+                            <input type="number" matInput formControlName="studentClass" name="class">
+                            <mat-error *ngIf="editStudentFormControl.studentClass?.touched && editStudentFormControl.studentClass.errors?.required">
+                                Class is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Div field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Division </mat-label>
+                            <input type="text" matInput formControlName="studentDiv" name="div">
+                            <mat-error *ngIf="editStudentFormControl.studentDiv?.touched && editStudentFormControl.studentDiv.errors?.required">
+                                Division is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+    
+            <p>
+            <!-- Name field -->
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label> Name </mat-label>
+                <input type="text" matInput formControlName="studentName" name="name">
+                <mat-error *ngIf="editStudentFormControl.studentName?.touched && editStudentFormControl.studentName.errors?.required">
+                    Name is required.
+                </mat-error>
+            </mat-form-field>
+            </p>
+            <div formGroupName="studentAddress">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <!-- Apartment field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Apartment </mat-label>
+                            <input type="text" matInput formControlName="apt" name="apt">
+                            <mat-error *ngIf="editStudentFormControl.apt?.touched && editStudentFormControl.apt.errors?.required">
+                                Apartment is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Street field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Street </mat-label>
+                            <input type="text" matInput formControlName="landmark" name="landmark">
+                            <mat-error *ngIf="editStudentFormControl.landmark?.touched && editStudentFormControl.landmark.errors?.required">
+                                Street is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- City field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> City </mat-label>
+                            <input type="text" matInput formControlName="city" name="city">
+                            <mat-error *ngIf="editStudentFormControl.city?.touched && editStudentFormControl.city.errors?.required">
+                                City is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <!-- Submit button -->
+        <button [disabled]="!editStudentForm.valid" mat-raised-button [mat-dialog-close]="1">
+            Update
+        </button>
+        <!-- Cancel button -->
+        <button mat-button color="warn" tabindex="-1" (click)="cancelEdit()">
+            Cancel
+        </button>
+    </mat-dialog-actions>
+    
+</div>

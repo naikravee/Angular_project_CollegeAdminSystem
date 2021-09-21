@@ -1,0 +1,10 @@
+.mat-raised-button {
+    margin: 1rem;
+    background-color: #442302;
+    color: #fff;
+    width: 40%;
+}
+
+.mat-button {
+    width: 40%;
+}

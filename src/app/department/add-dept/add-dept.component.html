@@ -1,0 +1,108 @@
+<div class="container">
+    <mat-dialog-content>
+        <form class="example-form" [formGroup]="addDeptForm">
+
+            <!-- {{ addDeptForm.value | json }} -->
+
+            <!-- <p>{{ local_data.dept_record.deptId }}</p> -->
+
+            <h2>{{ flag }} Department details</h2>
+    
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <!-- Dept Id field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label>Dept. Id</mat-label>
+                            <input type="number" matInput formControlName="deptId" name="deptId">
+                            <mat-error *ngIf="addDeptFormControl.deptId?.touched && addDeptFormControl.deptId.errors?.required">
+                                Dept. Id is required.
+                            </mat-error> 
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Dept name field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Dept. Name </mat-label>
+                            <input type="text" matInput formControlName="deptName" name="deptName">
+                            <mat-error *ngIf="addDeptFormControl.deptName?.touched && addDeptFormControl.deptName.errors?.required">
+                                Dept. Name is required.
+                            </mat-error>
+                            <mat-error *ngIf="addDeptFormControl.deptName?.touched && addDeptFormControl.deptName.errors?.pattern">
+                                Please enter a valid Dept. Name.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            <div formGroupName="deptTeacherDetails">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                         <!-- Teachers name field -->
+                         <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Teachers' Name </mat-label>
+                            <input type="text" matInput formControlName="teacherName" name="teacherName">
+                            <mat-error *ngIf="deptTeacherDetailsControl.teacherName?.touched && deptTeacherDetailsControl.teacherName.errors?.required">
+                                Teachers' name is required.
+                            </mat-error>
+                            <mat-error *ngIf="deptTeacherDetailsControl.teacherName?.touched && deptTeacherDetailsControl.teacherName.errors?.pattern">
+                                Please enter a valid Teachers' name.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Qualification field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Qualification </mat-label>
+                            <input type="text" matInput formControlName="qualification" name="qualification">
+                            <mat-error *ngIf="deptTeacherDetailsControl.qualification?.touched && deptTeacherDetailsControl.qualification.errors?.required">
+                                Qualification is required.
+                            </mat-error>
+                            <mat-error *ngIf="deptTeacherDetailsControl.qualification?.touched && deptTeacherDetailsControl.qualification.errors?.pattern">
+                                Please enter a valid Qualification.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Designation field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Designation </mat-label>
+                            <input type="text" matInput formControlName="designation" name="designation">
+                            <mat-error *ngIf="deptTeacherDetailsControl.designation?.touched && deptTeacherDetailsControl.designation.errors?.required">
+                                Designation is required.
+                            </mat-error>
+                            <mat-error *ngIf="deptTeacherDetailsControl.designation?.touched && deptTeacherDetailsControl.designation.errors?.pattern">
+                                Please enter a valid Designation.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <!-- Experience field -->
+                        <mat-form-field class="example-width" appearance="fill">
+                            <mat-label> Experience </mat-label>
+                            <input type="number" matInput formControlName="yearsOfExp" name="yearsOfExp">
+                            <mat-error *ngIf="deptTeacherDetailsControl.yearsOfExp?.touched && deptTeacherDetailsControl.yearsOfExp.errors?.required">
+                                Experience is required.
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <!-- Submit button -->
+        <button [disabled]="!addDeptForm.valid" mat-raised-button [mat-dialog-close]="1" (click)="doAction()">
+            {{ flag }}
+        </button>
+        <!-- Cancel button -->
+        <button mat-button color="warn" tabindex="-1" (click)="cancelAdd()">
+            Cancel
+        </button>
+    </mat-dialog-actions>
+    
+</div>

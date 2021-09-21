@@ -1,0 +1,51 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: #cc6600;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.mat-button {
+  background-color: #cc6600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.signOut-btn {
+  background-color: #fff;
+  color: #cc6600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.signOut-btn:hover {
+  background-color: #cc6600;
+  color: #fff;
+}
+
+.links::first-letter {
+  font-size: 1.1rem;
+}
+
+.active {
+  color: #3a1f04;
+}
+
+.example-headers-align {
+  z-index: 5;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}

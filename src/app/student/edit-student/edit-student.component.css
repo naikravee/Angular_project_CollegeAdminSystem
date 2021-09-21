@@ -1,0 +1,45 @@
+
+
+.example-form {
+    min-width: 120px;
+    max-width: 500px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.example-full-width {
+    width: 90%;
+}
+
+td {
+    padding-right: 8px;
+}
+
+.mat-form-field {
+    margin-top: 0.7rem;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #cc6600 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #cc6600 !important;;
+}
+
+.mat-input-element {
+    padding: 0 0.5rem;
+}
+
+.mat-raised-button {
+    margin: 1rem;
+    background-color: #442302;
+    color: #fff;
+    width: 40%;
+}
+
+.mat-button {
+    width: 40%;
+}
